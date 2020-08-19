@@ -6,3 +6,7 @@ This is my Diary app project
 ## Stack
 
 HTML - CSS - JS
+
+### Author
+
+MaxHiit
