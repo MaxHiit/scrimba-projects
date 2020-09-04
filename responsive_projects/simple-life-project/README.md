@@ -1,6 +1,6 @@
 # Simple life project
 
-Responsive project from [scrimba](https://www.scrimba.com)
+Responsive project from [scrimba](https://scrimba.com)
 
 ## Stack
 
