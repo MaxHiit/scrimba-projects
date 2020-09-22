@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-family: "Permanent Marker";
+   font-size: 2rem;
+   background: #02c39a;
+}
+
+main {
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 2rem;
+}
+
+h1 {
+   position: relative;
+   padding: 1.2rem 0;
+   margin-bottom: 1rem;
+}
+
+h1::before {
+   content: "";
+   position: absolute;
+   height: 7px;
+   width: 100%;
+   background: #f0f3bd;
+   bottom: 18px;
+   z-index: -1;
+}
+
+button {
+   border: 3px solid black;
+   /* background: #05668d; */
+   background: #00a896;
+   border-radius: 1.1rem;
+   font-family: inherit;
+   font-size: inherit;
+   cursor: pointer;
+   color: #fff;
+   padding: 1rem 5rem;
+   margin-bottom: 1.5rem;
+}
+
+.hidden {
+   display: none;
+}
+
+
+.bubble,
+.punchlineBubble {
+   display: inline-block;
+   position: relative;
+   padding: 30px 40px;
+   border-radius: 10px;
+   border: 3px solid black;
+   background: white;
+   margin-bottom: 60px;
+}
+
+.bubble:before {
+   content: "";
+   position: absolute;
+   left: -16px;
+   bottom: -30px;
+   height: 35px;
+   width: 70px;
+   border-radius: 0 0 100%;
+   box-shadow: -2px -2px 0 0 #000 inset, -23px 0 0 0 #fff inset, -25px -2px 0 0 #000 inset;
+}
+
+.punchlineBubble:before {
+   content: "";
+   position: absolute;
+   right: -16px;
+   bottom: -30px;
+   height: 35px;
+   width: 70px;
+   border-radius: 0 0 100%;
+   box-shadow: -2px -2px 0 0 #000 inset, -23px 0 0 0 #fff inset, -25px -2px 0 0 #000 inset;
+   transform: rotateY(180deg);
+}
