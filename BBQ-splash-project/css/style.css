@@ -1,0 +1,170 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 1rem;
+   color: #404040;
+   font-weight: 400;
+   text-align: center;
+}
+
+/**** Typography ****/
+
+h1 {
+   font-size: 2.25rem;
+   font-weight: 300;
+   color: #fff;
+   margin: 0;
+}
+
+.hero-subtitle {
+   color: #f18119;
+   font-weight: 900;
+   font-size: 1.3125rem;
+   text-transform: uppercase;
+   margin: 0;
+}
+
+h2 {
+   font-size: 1.3125rem;
+   margin: 0;
+}
+
+strong {
+   font-weight: 900;
+}
+
+.top-text {
+   font-size: 0.625rem;
+   margin: 0;
+   padding-top: 2px;
+   font-weight: 900;
+   color: #f18119;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   order: -1;
+   border-top: 5px solid #f18119;
+   border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+}
+
+.main-content-subtitle {
+   color: #f18119;
+   font-size: 1rem;
+   font-weight: 900;
+   text-transform: uppercase;
+   margin-top: 0;
+}
+
+.main-content-fine-print {
+   font-size: 0.625rem;
+   letter-spacing: 1px;
+}
+
+/**** Layout ****/
+
+/** hero section **/
+.hero-section {
+   background-image: url(../images/dark-ribs.jpg);
+   background-color: #404040;
+   background-size: cover;
+   background-position: center;
+   padding: 0 .5em 2em;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   min-height: 50vh;
+
+}
+
+/** Main content section **/
+.main-content-section {
+   padding: 2em 1em;
+}
+
+.hero-section>*,
+.main-content-section>* {
+   max-width: 400px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/** Form **/
+.email-collector {
+   width: 80%;
+   max-width: 300px;
+}
+
+input,
+.btn {
+   width: 100%;
+   border-radius: .35em;
+}
+
+input {
+   font-family: inherit;
+   text-align: inherit;
+   margin-bottom: .75em;
+   padding: .25em;
+   border: 1px solid #404040;
+   transform: scale(1);
+   transition: transform 250ms;
+}
+
+input:focus {
+   transform: scale(1.1);
+}
+
+.btn {
+   display: inline-block;
+   padding: 1em 1.5em;
+   font-size: 0.625rem;
+   text-transform: uppercase;
+   font-weight: 900;
+   letter-spacing: 1px;
+   border: none;
+   cursor: pointer;
+}
+
+.btn-primary {
+   background: linear-gradient(to left, #ff713b, #ffa51d);
+   color: #fff;
+   transform: scale(1);
+   transition: transform 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+   transform: scale(1.1);
+}
+
+/**** Media Queries ****/
+@media(min-width: 500px) {
+   body {
+      font-size: 1.125rem;
+      display: flex;
+   }
+
+   h1 {
+      font-size: 3.5rem;
+   }
+
+   h2,
+   .hero-subtitle {
+      font-size: 1.75rem;
+   }
+
+   .hero-section,
+   .main-content-section {
+      width: 50%;
+      min-height: 100vh;
+   }
+
+   .main-content-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+}

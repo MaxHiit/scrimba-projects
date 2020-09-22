@@ -1,0 +1,46 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   padding: 50px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+}
+
+/* Button style */
+#open-modal,
+#close-modal {
+   background: royalblue;
+   color: #fff;
+   padding: 15px;
+   font-size: 20px;
+   border: none;
+   cursor: pointer;
+   margin: 20px;
+}
+
+/* Modal style */
+#modal {
+   background: white;
+   max-width: 600px;
+   height: 200px;
+   padding: 20px;
+   margin: 0 auto;
+   position: relative;
+   top: 30%;
+}
+
+#overlay {
+   display: none;
+   width: 100vw;
+   height: 100vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background: rgba(0, 0, 0, .5);
+}
